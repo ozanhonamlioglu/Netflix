@@ -20,7 +20,7 @@ struct StandartHomeMovie: View {
 
 struct StandartHomeMovie_Previews: PreviewProvider {
     static var previews: some View {
-        StandartHomeMovie(movie: exampleMoview1)
+        StandartHomeMovie(movie: exampleMovie1)
             .frame(width: 200, height: 300)
     }
 }

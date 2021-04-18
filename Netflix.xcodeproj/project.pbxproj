@@ -17,6 +17,7 @@
 		4DAE2A00262B6440003C57B2 /* StandartHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE29FF262B6440003C57B2 /* StandartHomeMovie.swift */; };
 		4DAE2A04262B6496003C57B2 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE2A03262B6496003C57B2 /* GlobalHelpers.swift */; };
 		4DAE2A07262B6BF6003C57B2 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE2A06262B6BF6003C57B2 /* HomeVM.swift */; };
+		4DAE2A2C262C5730003C57B2 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE2A2B262C5730003C57B2 /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4DAE29FF262B6440003C57B2 /* StandartHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartHomeMovie.swift; sourceTree = "<group>"; };
 		4DAE2A03262B6496003C57B2 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		4DAE2A06262B6BF6003C57B2 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		4DAE2A2B262C5730003C57B2 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				4DAE29FF262B6440003C57B2 /* StandartHomeMovie.swift */,
 				4DAE2A03262B6496003C57B2 /* GlobalHelpers.swift */,
 				4DAE2A06262B6BF6003C57B2 /* HomeVM.swift */,
+				4DAE2A2B262C5730003C57B2 /* TopMoviePreview.swift */,
 			);
 			path = Netflix;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				4DAE2A07262B6BF6003C57B2 /* HomeVM.swift in Sources */,
 				4DAE29EC262B5BFA003C57B2 /* HomeView.swift in Sources */,
 				4DAE29FC262B63D9003C57B2 /* Movie.swift in Sources */,
+				4DAE2A2C262C5730003C57B2 /* TopMoviePreview.swift in Sources */,
 				4DAE2A00262B6440003C57B2 /* StandartHomeMovie.swift in Sources */,
 				4DAE29D4262B5A9B003C57B2 /* NetflixApp.swift in Sources */,
 			);
