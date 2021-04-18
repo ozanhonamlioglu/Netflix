@@ -66,17 +66,15 @@
 		4DAE29D2262B5A9B003C57B2 /* Netflix */ = {
 			isa = PBXGroup;
 			children = (
-				4DAE29EB262B5BFA003C57B2 /* HomeView.swift */,
-				4DAE29FB262B63D9003C57B2 /* Movie.swift */,
+				4DAE2A30262C6FE7003C57B2 /* ViewModel */,
+				4DAE2A2F262C6FE3003C57B2 /* Model */,
+				4DAE2A2E262C6FDC003C57B2 /* View */,
 				4DAE29D5262B5A9B003C57B2 /* ContentView.swift */,
 				4DAE29D3262B5A9B003C57B2 /* NetflixApp.swift */,
+				4DAE2A03262B6496003C57B2 /* GlobalHelpers.swift */,
 				4DAE29D7262B5A9C003C57B2 /* Assets.xcassets */,
 				4DAE29DC262B5A9C003C57B2 /* Info.plist */,
 				4DAE29D9262B5A9C003C57B2 /* Preview Content */,
-				4DAE29FF262B6440003C57B2 /* StandartHomeMovie.swift */,
-				4DAE2A03262B6496003C57B2 /* GlobalHelpers.swift */,
-				4DAE2A06262B6BF6003C57B2 /* HomeVM.swift */,
-				4DAE2A2B262C5730003C57B2 /* TopMoviePreview.swift */,
 			);
 			path = Netflix;
 			sourceTree = "<group>";
@@ -87,6 +85,40 @@
 				4DAE29DA262B5A9C003C57B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DAE2A2E262C6FDC003C57B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE2A31262C6FED003C57B2 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DAE2A2F262C6FE3003C57B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE29FB262B63D9003C57B2 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DAE2A30262C6FE7003C57B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE2A06262B6BF6003C57B2 /* HomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DAE2A31262C6FED003C57B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE29FF262B6440003C57B2 /* StandartHomeMovie.swift */,
+				4DAE2A2B262C5730003C57B2 /* TopMoviePreview.swift */,
+				4DAE29EB262B5BFA003C57B2 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
