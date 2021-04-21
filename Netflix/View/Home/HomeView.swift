@@ -20,9 +20,13 @@ struct HomeView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack {
                     
-                    TopMoviePreview(movie: exampleMovie1)
-                        .frame(width: screen.width)
-                        .padding(.top, -50)
+                    ZStack(alignment: .top) {
+                        TopMoviePreview(movie: exampleMovie1)
+                            .frame(width: screen.width)
+                            .padding(.top, -50)
+                        
+                        TopRowButtons()
+                    }
                     
                     ForEach(vm.allCategories, id: \.self) { category in
                         VStack {
