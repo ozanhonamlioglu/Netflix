@@ -30,10 +30,28 @@ struct MovieDetail: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
-                    StandartHomeMovie(movie: movie)
-                        .frame(width: screen.width / 2.5)
-                    
-                    MovieInfoSubHeadline(movie: movie)
+                    VStack {
+                        StandartHomeMovie(movie: movie)
+                            .frame(width: screen.width / 2.5)
+                        
+                        MovieInfoSubHeadline(movie: movie)
+                        
+                        if movie.promotionHeadline != nil {
+                            Text("Watch Season 3")
+                                .bold()
+                                .font(.headline)
+                        }
+                        
+                        PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red, foregroundColor: .white) {
+                            
+                        }
+                        
+                        CurrentEpisodeInformation(movie: movie)
+                        
+                        CastInfo(movie: movie)
+                        
+                    }
+                    .padding(.horizontal, 10)
                     
                 }
                 
@@ -46,6 +64,47 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: exampleMovie2)
+        MovieDetail(movie: exampleMovie4)
+    }
+}
+
+struct CastInfo: View {
+    var movie: Movie
+    
+    var body: some View {
+        VStack(spacing: 3) {
+            HStack {
+                Text("Cast: \(movie.cast)")
+                Spacer()
+            }
+            
+            HStack {
+                Text("Creators: \(movie.creators)")
+                Spacer()
+            }
+        }
+        .font(.caption)
+        .foregroundColor(.gray)
+        .padding(.vertical, 10)
+    }
+}
+
+struct CurrentEpisodeInformation: View {
+    var movie: Movie
+    
+    var body: some View {
+        Group {
+            HStack {
+                Text(movie.episodeInfoDisplay)
+                    .bold()
+                Spacer()
+            }.padding(.vertical, 4)
+            
+            HStack {
+                Text(movie.episodeDescriptionDisplay)
+                    .font(.subheadline)
+                Spacer()
+            }
+        }
     }
 }
