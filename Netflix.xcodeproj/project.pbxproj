@@ -25,6 +25,8 @@
 		BD9C4FA4262DFB0E00327BC1 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = BD9C4FA3262DFB0E00327BC1 /* Readme.md */; };
 		BDD5AD7D262F016B00BE7543 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5AD7C262F016B00BE7543 /* SmallVerticalButton.swift */; };
 		BDD5AD88262F1E9600BE7543 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5AD87262F1E9600BE7543 /* PlayButton.swift */; };
+		BDD8952E263366D600AB2DC6 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8952D263366D600AB2DC6 /* CustomTabSwitcher.swift */; };
+		BDD895312633714300AB2DC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD895302633714300AB2DC6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		BD9C4FA3262DFB0E00327BC1 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		BDD5AD7C262F016B00BE7543 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		BDD5AD87262F1E9600BE7543 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		BDD8952D263366D600AB2DC6 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		BDD895302633714300AB2DC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				4DAE2A03262B6496003C57B2 /* GlobalHelpers.swift */,
+				BDD895302633714300AB2DC6 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			children = (
 				BD6B76142630C34D00AA3FFF /* MovieDetail.swift */,
 				BD6B76182630C99000AA3FFF /* MovieInfoSubHeadline.swift */,
+				BDD8952D263366D600AB2DC6 /* CustomTabSwitcher.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			files = (
 				4DAE2A04262B6496003C57B2 /* GlobalHelpers.swift in Sources */,
 				4DAE29D6262B5A9B003C57B2 /* ContentView.swift in Sources */,
+				BDD8952E263366D600AB2DC6 /* CustomTabSwitcher.swift in Sources */,
 				BD6B760F2630BE7900AA3FFF /* TopRowButtons.swift in Sources */,
 				BD6B76152630C34D00AA3FFF /* MovieDetail.swift in Sources */,
 				4DAE2A07262B6BF6003C57B2 /* HomeVM.swift in Sources */,
@@ -244,6 +251,7 @@
 				4DAE29FC262B63D9003C57B2 /* Movie.swift in Sources */,
 				4DAE2A2C262C5730003C57B2 /* TopMoviePreview.swift in Sources */,
 				BD6E3289263208BA00A4F55B /* Episode.swift in Sources */,
+				BDD895312633714300AB2DC6 /* Extensions.swift in Sources */,
 				BD6B76192630C99000AA3FFF /* MovieInfoSubHeadline.swift in Sources */,
 				4DAE2A00262B6440003C57B2 /* StandartHomeMovie.swift in Sources */,
 				4DAE29D4262B5A9B003C57B2 /* NetflixApp.swift in Sources */,

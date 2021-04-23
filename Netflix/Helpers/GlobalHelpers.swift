@@ -81,7 +81,3 @@ let exampleMovie6 = Movie(
 let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
 let exampleEpisodeInfo1: CurrentEpisodeInfo = CurrentEpisodeInfo(episodeName: "Endings and Beginnigs", description: "A young man must stop the Lord of Darkness from both destroying daylight and marrying the woman he loves.", season: 2, episode: 1)
 
-extension LinearGradient {
-    // this static will be instantiated only for once and store in the memory for later use
-    static let blackOpacityGradient = LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.95)]), startPoint: .top, endPoint: .bottom)
-}
