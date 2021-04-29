@@ -14,7 +14,6 @@ struct StandartHomeMovie: View {
     var body: some View {
         KFImage(movie.thumbnailURL)
             .resizable()
-            .scaledToFill()
     }
 }
 
@@ -22,6 +21,6 @@ struct StandartHomeMovie_Previews: PreviewProvider {
     static var previews: some View {
         StandartHomeMovie(movie: exampleMovie1)
             .scaledToFill()
-            .clipped()
+            
     }
 }

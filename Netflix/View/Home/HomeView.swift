@@ -9,8 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
     var vm = HomeVM()
+    // @ObservedObject var vm: HomeVM
     
     let screen = UIScreen.main.bounds
+    
+    @State private var movieDetailToShow: Movie? = nil
     
     var body: some View {
         ZStack {
@@ -41,15 +44,23 @@ struct HomeView: View {
                                 LazyHStack {
                                     ForEach(vm.getMovie(forCat: category)) { movie in
                                         StandartHomeMovie(movie: movie)
-                                            .frame(width: 100, height: 200)
-                                            .padding(.horizontal, 20)
+                                            .frame(width: 100, height: 150)
+                                            .scaledToFill()
+                                            .padding(.horizontal, 0)
                                             .clipped()
+                                            .onTapGesture(perform: {
+                                                movieDetailToShow = movie
+                                            })
                                     }
                                 }
                             }
                         }.padding(.vertical, 10)
                     }
                 }
+            }
+            
+            if movieDetailToShow != nil {
+                MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
             }
             
         }
